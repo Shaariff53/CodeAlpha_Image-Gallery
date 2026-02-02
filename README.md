@@ -13,8 +13,8 @@ A beautiful image gallery showcase application built with modern web technologie
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/image-showcase.git
-cd image-showcase
+git clone https://github.com/Shaariff53/Image-Gallery.git
+cd Image-Gallery
 ```
 
 2. Install dependencies:
@@ -61,7 +61,7 @@ bun run preview
 - `npm run test` - Run tests once
 - `npm run test:watch` - Run tests in watch mode
 
-## What technologies are used for this project?
+## Technologies
 
 This project is built with:
 
@@ -71,10 +71,10 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Deployment
 
 You can deploy this project to platforms like Vercel, Netlify, GitHub Pages, or any static hosting service.
 
-## Can I connect a custom domain?
+## Custom Domain
 
 Yes, you can connect a custom domain through your hosting provider's domain management settings.
