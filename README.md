@@ -64,17 +64,12 @@ bun run preview
 ## Technologies
 
 This project is built with:
-
+-Html
+-Css
+-Javascript
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
 
-## Deployment
-
-You can deploy this project to platforms like Vercel, Netlify, GitHub Pages, or any static hosting service.
-
-## Custom Domain
-
-Yes, you can connect a custom domain through your hosting provider's domain management settings.
