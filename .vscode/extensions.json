@@ -1,0 +1,27 @@
+[
+  {
+    "name": "ES7+ React/Redux/React-Native snippets",
+    "id": "dsznajder.es7-react-js-snippets",
+    "description": "Extensions for React development"
+  },
+  {
+    "name": "Tailwind CSS IntelliSense",
+    "id": "bradlc.vscode-tailwindcss",
+    "description": "Tailwind CSS class completion"
+  },
+  {
+    "name": "TypeScript Vue Plugin",
+    "id": "Vue.vscode-typescript-vue-plugin",
+    "description": "TypeScript plugin for Vue"
+  },
+  {
+    "name": "ESLint",
+    "id": "dbaeumer.vscode-eslint",
+    "description": "Integrates ESLint into VS Code"
+  },
+  {
+    "name": "Prettier - Code formatter",
+    "id": "esbenp.prettier-vscode",
+    "description": "Code formatter using Prettier"
+  }
+]

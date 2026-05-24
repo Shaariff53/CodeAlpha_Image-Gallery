@@ -1,8 +1,40 @@
 {
-  "name": "vite_react_shadcn_ts",
-  "private": true,
-  "version": "0.0.0",
+  "name": "snapgallery",
+  "description": "A modern, responsive image gallery application built with React, TypeScript, and Tailwind CSS. Features seamless category filtering, beautiful lightbox viewing, and smooth animations.",
+  "version": "1.0.0",
   "type": "module",
+  "private": false,
+  "homepage": "https://github.com/yourusername/snapgallery",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/snapgallery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/snapgallery/issues",
+    "email": "support@snapgallery.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "SnapGallery Contributors",
+    "email": "support@snapgallery.com",
+    "url": "https://github.com/yourusername"
+  },
+  "keywords": [
+    "gallery",
+    "image-gallery",
+    "react",
+    "typescript",
+    "tailwind",
+    "shadcn-ui",
+    "responsive",
+    "lightbox",
+    "photography",
+    "web-app"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
