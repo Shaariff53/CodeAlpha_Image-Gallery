@@ -1,125 +1,114 @@
-# 🖼️ SnapGallery
+# SnapGallery
 
-A modern, responsive image gallery application built with React, TypeScript, and Tailwind CSS. Features seamless category filtering, beautiful lightbox viewing, and smooth animations.
+A responsive image gallery application built with React and TypeScript.
 
-[![React](https://img.shields.io/badge/React-18+-blue?logo=react)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue?logo=typescript)](https://www.typescriptlang.org)
-[![Vite](https://img.shields.io/badge/Vite-5+-purple?logo=vite)](https://vitejs.dev)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-green?logo=node.js)](https://nodejs.org)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
 
-## ✨ Features
+## Overview
 
-- **📱 Responsive Design** - Looks great on desktop, tablet, and mobile devices
-- **🎨 Dynamic Gallery** - Beautiful grid layout with smooth animations
-- **🔍 Category Filtering** - Filter images by nature, city, animals, people, or view all
-- **🖼️ Lightbox Viewer** - Full-screen image viewing with image details
-- **⌨️ Keyboard Navigation** - Navigate with arrow keys, close with ESC
-- **⚡ Modern Stack** - React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui
-- **🎯 Accessibility** - ARIA labels, semantic HTML, keyboard support
-- **🚀 Performance** - Lazy loading, optimized images, fast build times
+SnapGallery is a modern image gallery with category filtering, lightbox viewing, and keyboard navigation. Built with React 18, TypeScript, Vite, and Tailwind CSS.
 
-## 🎯 Quick Start
+## Features
+
+- Responsive grid layout with lazy loading
+- Image filtering by category
+- Full-screen lightbox viewer
+- Keyboard navigation (arrow keys, ESC)
+- Accessible markup and ARIA labels
+- Mobile-responsive design
+- Fast builds with Vite
+
+## Quick Start
 
 ### Prerequisites
 
-- **Node.js** 18.0.0 or higher
-- **npm** 9.0.0+ or **bun** 1.0.0+
+- Node.js 18+
+- npm 9+ or bun 1.0+
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/snapgallery.git
-   cd snapgallery
-   ```
+```bash
+git clone https://github.com/yourusername/snapgallery.git
+cd snapgallery
+npm install
+npm run dev
+```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or using bun
-   bun install
-   ```
+Development server runs on http://localhost:8080.
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   # or
-   bun run dev
-   ```
-
-   The application will open at **http://localhost:8080**
-
-### Building for Production
+### Production
 
 ```bash
 npm run build
-# or
-bun run build
-```
-
-Production-ready files will be in the `dist/` directory.
-
-### Preview Production Build
-
-```bash
 npm run preview
-# or
-bun run preview
 ```
 
-## 📦 Available Scripts
+## Available Scripts
 
-| Script | Description |
-|--------|-------------|
+| Command | Purpose |
+|---------|---------|
 | `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run build:dev` | Build in development mode |
+| `npm run build` | Production build |
 | `npm run preview` | Preview production build |
 | `npm run lint` | Run ESLint |
-| `npm run test` | Run tests once |
-| `npm run test:watch` | Run tests in watch mode |
+| `npm run test` | Run tests |
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-snapgallery/
-├── src/
-│   ├── components/          # React components
-│   │   ├── ui/             # shadcn/ui components
-│   │   └── NavLink.tsx     # Navigation link wrapper
-│   ├── pages/              # Page components
-│   │   ├── Index.tsx       # Gallery page
-│   │   └── NotFound.tsx    # 404 page
-│   ├── hooks/              # Custom React hooks
-│   ├── lib/                # Utility functions
-│   ├── assets/
-│   │   └── gallery/        # Gallery images
-│   ├── styles/             # CSS files
-│   ├── App.tsx             # Root component
-│   └── main.tsx            # Entry point
-├── public/                 # Static files
-├── docs/                   # Documentation
-├── package.json            # Dependencies
-├── vite.config.ts          # Vite configuration
-├── tsconfig.json           # TypeScript configuration
-├── tailwind.config.ts      # Tailwind CSS configuration
-└── README.md               # This file
+src/
+├── components/       React components
+│   ├── ui/          shadcn/ui components
+│   └── NavLink.tsx
+├── pages/           Page components
+│   ├── Index.tsx    Main gallery
+│   └── NotFound.tsx 404 page
+├── hooks/           Custom hooks
+├── lib/             Utilities
+├── assets/gallery/  Gallery images
+├── App.tsx          Root component
+└── main.tsx         Entry point
 ```
 
-## 🎨 Gallery Features
+## Gallery Configuration
 
-### Categories
-- **Nature** - Landscapes and natural scenery
-- **City** - Urban and architectural photography
-- **Animals** - Wildlife and animal photography
-- **People** - Portrait and human photography
+Add images to `src/assets/gallery/` and update the images array in `src/pages/Index.tsx`:
 
-### Interactions
-- Click any image to open the lightbox
-- Use arrow keys (← →) to navigate between images
-- Press ESC to close the lightbox
-- Filter by category to refine the gallery view
+```typescript
+{
+  id: 9,
+  src: yourImage,
+  title: 'Image Title',
+  category: 'nature',
+  description: 'Image description'
+}
+```
+
+Categories are defined in the same file and can be customized.
+
+## Technology
+
+- React 18
+- TypeScript 5
+- Vite 5
+- Tailwind CSS 3
+- shadcn/ui
+- React Router 6
+- TanStack Query
+- Vitest
+
+## Documentation
+
+- [Architecture](docs/ARCHITECTURE.md) — Design and structure
+- [Setup Guide](docs/SETUP.md) — Development setup
+- [API Reference](docs/API.md) — Component and function reference
+- [Contributing](CONTRIBUTING.md) — Contribution guidelines
+- [Code of Conduct](CODE_OF_CONDUCT.md) — Community standards
+
+## License
+
+MIT
 
 ## 🛠️ Tech Stack
 
